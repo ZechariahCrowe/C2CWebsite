@@ -1,0 +1,21 @@
+body{
+     background-color: rgb(242, 239, 194);
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     height: 100vh;
+     font-family: Arial, sans-serif;
+}
+
+.mainForm{
+
+    background-color: rgb(245, 243, 240);
+    /*background: linear-gradient(to bottom, yellow, white 80%);*/
+    padding: 50px;
+    width: 1000px;
+    text-align: center;
+}
+
+.list-group :hover{
+    
+}

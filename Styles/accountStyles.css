@@ -1,0 +1,268 @@
+body{
+     background-color: rgb(242, 239, 194);
+     display: flex;
+     justify-content: center;
+     align-items: flex-start;
+     min-height: 100vh;
+     font-family: Arial, sans-serif;
+}
+
+
+.mainForm{
+   
+    background-color: rgb(245, 243, 240);
+    /*background: linear-gradient(to bottom, yellow, white 80%);*/
+    padding: 50px;
+    width: 1000px;
+    text-align: center;
+}
+
+.btn-close{
+    display: block;
+    margin-right: auto;
+    margin-left: 0;
+}
+
+.profilePicture{
+    border-radius: 100px;
+}
+
+/*Tab stuff*/
+
+.tab{
+    overflow: hidden;
+    border: 1px solid #ccc;
+    background-color: #f1f1f1;
+}
+
+.tab button{
+    width: 25%;
+    background-color: inherit;
+    float: left;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 14px 16px;
+    transition: 0.3s;
+}
+
+.tab button:hover{
+    background-color: #ddd;
+}
+
+.tab button.active{
+    background-color: #bab2b2;
+}
+
+.tab button:disabled {
+    
+    opacity: 0.5;
+    cursor: not-allowed;
+}
+
+.tabcontent{
+    display: none;
+    animation: fadeEffect 1s;
+}
+/* AI STUFF TO HELP FIND THE ISSUE*/
+input{
+    width: 30%;
+}
+
+.form-container input {
+    width: 30%;
+    padding: 10px;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+}
+
+button {
+    width: 50%;
+}
+
+.form-container button {
+    width: 50%;
+    padding: 10px;
+    background-color: #007bff;
+    border: none;
+    color: white;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+@keyframes fadeEffect{
+    from{opacity: 0;}
+    to {opacity: 1;}
+}
+
+.userinformation{
+  text-align: center;
+}
+
+/*Inventory stuffies*/
+/*Product grid code*/
+
+.container {
+    /*display: flex;
+    overflow-x: auto;
+    scroll-behavior: smooth;
+    gap: 25px;
+    padding: 20px;
+    */
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    overflow-x: auto;
+    scroll-behavior: smooth;
+    padding: 20px;
+}
+
+.container::-webkit-scrollbar{
+display: none;
+}
+
+.card:hover{
+   transform: scale(1.05); 
+   
+} 
+/*Cards*/
+/*
+.card{
+    flex: 0 0 300px; 
+    width: fit-content;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 30px;
+    box-shadow: 0 0 30px rgba(0, 0, 0, .04);
+    transition: 0.4s ease;
+}
+
+
+
+.card .card-image{
+    width: 85%;
+    height: 280px;
+    padding: 0 20px;
+    text-align: center;
+    background: #f4f7f8;
+    border-radius: 12px;
+}
+
+.card .card-image img{
+    width: 100%;
+    transition: 0.4s ease;
+}
+
+.card:hover .card-image img{
+    transform: scale(1.02) rotate(-3deg) translate(-5px);
+}
+
+
+.card .card-image .bx-star{
+    cursor: pointer;
+    position: absolute;
+    top: 12px;
+    right: 12px;
+    padding: 10;
+    font-size: 20px;
+    color: yellow;
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 30px rgba(0, 0, 0, .04);
+} 
+
+.card .card-content h3{
+    color: black;
+    font-size: 22px;
+    margin-top: 20px;
+}
+
+.card .card-content p{
+    color: grey;
+    font-size: 18px;
+    font-weight: 500;
+    margin: 8px 0 22px;
+    text-align: justify;
+}
+
+.card .card-content button{
+    cursor: pointer;
+    color: white;
+    width: 100%;
+    height: 50px;
+    font-size: 22px;
+    font-weight: 600;
+    border-radius: 16px;
+    border: none;
+    background: linear-gradient(45deg, yellow, rgb(238, 216, 14));
+}
+*/
+
+
+
+/*apply different styles based on the characteristics of the user's device or environmen*/
+@media (max-width: 1280px){
+    body{
+        height: unset;
+        padding: 30px;
+    }
+
+    .container{
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .container .card{
+        margin: 20px;
+    }
+}
+/*--------------------------------------------------------*/
+
+/* Form Container */
+.form-container {
+    background: white;
+    padding: 30px;
+    width: 350px;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+}
+ 
+.form-container h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+ 
+/* Form Group */
+.form-group {
+    margin-bottom: 15px;
+}
+ 
+/* Inputs */
+input {
+    width: 30%;
+    padding: 10px;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+}
+ 
+/* Input focus effect */
+input:focus {
+    border-color: #007bff;
+    outline: none;
+}
+ 
+/* Button */
+button {
+    width: 50%;
+    padding: 10px;
+    background-color: #FFDE59;
+    border: none;
+    color: white;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+.btn-primary{
+    background-color: #FFDE59;
+    border-color: #FFDE59;
+}

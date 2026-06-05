@@ -1,0 +1,85 @@
+body{
+     background-color: rgb(242, 239, 194);
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     height: 100vh;
+     font-family: Arial, sans-serif;
+}
+
+.mainForm{
+
+    background-color: rgb(245, 243, 240);
+    /*background: linear-gradient(to bottom, yellow, white 80%);*/
+    padding: 30px;
+    max-width: 900px;
+    border-radius: 10px;
+    box-shadow: 0 4px 19px black;
+    text-align: center;
+}
+
+.panel {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+}
+.close-btn{
+    margin-right: auto;
+}
+
+
+.container{
+    display: flex;
+    gap: 30px;
+    margin: 10px 0;
+}
+
+.box{
+    flex: 1;
+    padding: 15px;
+    background-color: white;
+    border: 1px solid black;
+    border-radius: 8px;
+}
+
+.productImage{
+    width: 100%;
+    height: auto;
+}
+
+/*Tab stuff*/
+
+.tab{
+    overflow: hidden;
+    border: 1px solid #ccc;
+    background-color: #f1f1f1;
+}
+
+.tab button{
+    width: 50%;
+    background-color: inherit;
+    float: left;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 14px 16px;
+    transition: 0.3s;
+}
+
+.tab button:hover{
+    background-color: #ddd;
+}
+
+.tab button.active{
+    background-color: #ccc;
+}
+
+.tabcontent{
+    display: none;
+    animation: fadeEffect 1s;
+}
+
+.btn-primary{
+    background-color: #FFDE59;
+    border-color: #FFDE59;
+}
